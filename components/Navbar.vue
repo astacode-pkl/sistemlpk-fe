@@ -53,7 +53,7 @@
               <a class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/persyaratan"> Persyaratan </a>
               <a class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="/galeri"> Galeri </a>
               <a class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="#"> Kontak </a>
-              <a class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="#"> Tentang </a>
+              <a class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600" href="tentang"> Tentang </a>
             </div>
           </div>
         </div>

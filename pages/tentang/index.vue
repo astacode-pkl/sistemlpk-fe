@@ -174,15 +174,6 @@
   </template>
   
   <script>
-  useHead({
-    title: 'Tentang',
-    meta: [
-      {
-        name: 'description',
-        content: 'Tentang Page'
-      }
-    ]
-  })
   export default {
     name: 'AboutPage',
     data() {

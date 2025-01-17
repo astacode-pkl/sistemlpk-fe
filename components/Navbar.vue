@@ -1,9 +1,10 @@
 <template>
     <div>
         <!-- ========== HEADER ========== -->
-        <header class="bg-white fixed top-0 border-b border-gray-200 flex flex-wrap md:justify-start md:flex-nowrap z-50 h-16 mt-5 md:mt-0 lg:h-20 w-full">
+        <header
+            class="bg-white fixed top-0 border-b border-gray-200 flex flex-wrap md:justify-start md:flex-nowrap z-50 h-16  lg:h-20 w-full">
             <nav
-                class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2">
+                class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 py-auto sm:px-6 lg:px-8 py-2">
                 <!-- Logo w/ Collapse Button -->
                 <div class="flex items-center justify-between">
                     <Nuxt-link class="flex gap-3" to="#" aria-label="Brand"><img src="/assets/img/logo.png" alt="logo"
@@ -37,29 +38,34 @@
 
                 <!-- Collapse -->
                 <div id="hs-header-classic"
-                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+                    class="hs-collapse hidden overflow-hidden bg-white w-full rounded-lg px-10 pt-3 lg:px-0 transition-all duration-300 basis-full grow md:block"
                     aria-labelledby="hs-header-classic-collapse">
                     <div
                         class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
                         <div
                             class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-                            <Nuxt-link class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <Nuxt-link
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/" aria-current="page">
                                 Home
                             </Nuxt-link>
-                            <Nuxt-link class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <Nuxt-link
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/persyaratan">
                                 Persyaratan
                             </Nuxt-link>
-                            <Nuxt-link class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <Nuxt-link
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/galeri">
                                 Galeri
                             </Nuxt-link>
-                            <Nuxt-link class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <Nuxt-link
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="#kontak">
                                 Kontak
                             </Nuxt-link>
-                            <Nuxt-link class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                            <Nuxt-link
+                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
                                 to="/tentang">
                                 Tentang
                             </Nuxt-link>

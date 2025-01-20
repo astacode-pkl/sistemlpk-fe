@@ -35,10 +35,9 @@
                     <!-- End Collapse Button -->
                 </div>
                 <!-- End Logo w/ Collapse Button -->
-
                 <!-- Collapse -->
                 <div id="hs-header-classic"
-                    class="hs-collapse hidden overflow-hidden bg-white w-full rounded-lg px-10 pt-3 lg:px-0 transition-all duration-300 basis-full grow md:block"
+                    class="hs-collapse hidden overflow-hidden bg-white w-full rounded-lg px-10 pt-3 lg:pt-0 lg:px-0 transition-all duration-300 basis-full grow md:block"
                     aria-labelledby="hs-header-classic-collapse">
                     <div
                         class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
@@ -61,7 +60,7 @@
                             </Nuxt-link>
                             <Nuxt-link
                                 class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="#kontak">
+                                to="/kontak">
                                 Kontak
                             </Nuxt-link>
                             <Nuxt-link

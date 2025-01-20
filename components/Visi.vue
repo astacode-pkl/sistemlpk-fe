@@ -8,10 +8,8 @@
                         class="w-[90%] h-full lg:w-full object-cover bg-gray-50 shadow-lg rounded-lg">
                 </div>
                 <div class="p-10 bg-gray-50 shadow-lg rounded-lg mx-auto col-span-1 md:col-span-2 md:order-1 order-2" data-aos="fade-up">
-                    <h3 class="text-xl text-center mb-5 font-bold text-blue-600">
-                        Visi Misi
-                    </h3>
-                    <h4 class="font-semibold text-lg text-gray-800 text-center">Visi</h4>
+                    <h2 class="text-center text-3xl font-bold text-blue-500 mb-3 ">Visi & Misi</h2>
+                    <h3 class="font-semibold text-lg text-gray-800 text-center">Visi</h3>
                     <p class="mt-4 text-gray-700 leading-relaxed text-center md:text-left">
                         Menjadikan LPK Tsukuba Indonesia sebagai sarana generasi muda Indonesia untuk mengembangkan
                         potensi dan
@@ -20,7 +18,7 @@
                         Khususnya
                         di Negara Jepang.
                     </p>
-                    <h4 class="font-semibold text-lg text-gray-800 text-center mt-5">Misi</h4>
+                    <h3 class="font-semibold text-lg text-gray-800 text-center mt-5">Misi</h3>
                     <p class="mt-4 text-gray-700 leading-relaxed">
                         1. Melatih kedisiplinan dan etos kerja sesuai standar di Jepang.<br>
                         2. Mengoptimalkan potensi dari setiap peserta melalui Program Pemagangan Swasta, dan Program

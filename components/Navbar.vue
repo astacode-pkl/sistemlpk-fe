@@ -2,13 +2,20 @@
     <div>
         <!-- ========== HEADER ========== -->
         <header
-            class="bg-white fixed top-0 border-b border-gray-200 flex flex-wrap md:justify-start md:flex-nowrap z-50 h-16  lg:h-20 w-full">
+            ref="headerRef"
+            class="fixed top-0 border-b border-gray-200 flex flex-wrap md:justify-start md:flex-nowrap z-50 h-16 lg:h-20 w-full transition-all duration-300"
+            :class="{
+                'bg-white/0 backdrop-blur-0 border-transparent': !isScrolled,
+                'bg-white/90 backdrop-blur-sm border-gray-200': isScrolled
+            }">
             <nav
                 class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 py-auto sm:px-6 lg:px-8 py-2">
                 <!-- Logo w/ Collapse Button -->
                 <div class="flex items-center justify-between">
-                    <Nuxt-link class="flex gap-3" to="#" aria-label="Brand"><img src="/assets/img/logo.png" alt="logo"
-                            class="w-10"><img src="/assets/img/nama.png" alt="nama" class="w-20"></Nuxt-link>
+                    <Nuxt-link class="flex gap-3" to="#" aria-label="Brand">
+                        <img src="/assets/img/logo.png" alt="logo" class="w-10">
+                        <img src="/assets/img/nama.png" alt="nama" class="w-20">
+                    </Nuxt-link>
                     <!-- Collapse Button -->
                     <div class="md:hidden">
                         <button type="button"
@@ -37,35 +44,50 @@
                 <!-- End Logo w/ Collapse Button -->
                 <!-- Collapse -->
                 <div id="hs-header-classic"
-                    class="hs-collapse hidden overflow-hidden bg-white w-full rounded-lg px-10 pt-3 lg:pt-0 lg:px-0 transition-all duration-300 basis-full grow md:block"
+                    class="hs-collapse hidden overflow-hidden bg-white w-full lg:bg-transparent rounded-lg px-10 pt-3 lg:pt-0 lg:px-0 transition-all duration-300 basis-full grow md:block"
                     aria-labelledby="hs-header-classic-collapse">
                     <div
                         class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">
                         <div
                             class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
                             <Nuxt-link
-                                class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="/" aria-current="page">
+                                class="p-2 flex items-center text-sm  hover:text-blue-600 focus:outline-none focus:text-blue-600"
+                                to="/" aria-current="page" :class="{
+                'text-white': !isScrolled,
+                'text-gray-800': isScrolled
+            }">
                                 Home
                             </Nuxt-link>
                             <Nuxt-link
                                 class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="/persyaratan">
+                                to="/persyaratan" :class="{
+                'text-white': !isScrolled,
+                'text-gray-800': isScrolled
+            }">
                                 Persyaratan
                             </Nuxt-link>
                             <Nuxt-link
                                 class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="/galeri">
+                                to="/galeri" :class="{
+                'text-white': !isScrolled,
+                'text-gray-800': isScrolled
+            }">
                                 Galeri
                             </Nuxt-link>
                             <Nuxt-link
                                 class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="/kontak">
+                                to="/kontak" :class="{
+                'text-white': !isScrolled,
+                'text-gray-800': isScrolled
+            }">
                                 Kontak
                             </Nuxt-link>
                             <Nuxt-link
                                 class="p-2 flex items-center text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600"
-                                to="/tentang">
+                                to="/tentang" :class="{
+                'text-white': !isScrolled,
+                'text-gray-800': isScrolled
+            }">
                                 Tentang
                             </Nuxt-link>
                         </div>
@@ -77,3 +99,23 @@
         <!-- ========== END HEADER ========== -->
     </div>
 </template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isScrolled = ref(false)
+const headerRef = ref(null)
+
+const handleScroll = () => {
+    // Ubah state saat scroll lebih dari 50px
+    isScrolled.value = window.scrollY > 50
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
+</script>

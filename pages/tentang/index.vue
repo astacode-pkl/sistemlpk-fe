@@ -16,13 +16,17 @@
         <div v-else>
           <img src="assets/img/bg-tentang.webp" alt="foto-bg"
             class="w-full h-full object-cover absolute inset-0" />
-          <div class="absolute inset-0 bg-black opacity-40" />
+          <div class="absolute inset-0 bg-black opacity-60" />
           <div
             class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2">
             <h1 class="text-white text-4xl font-semibold z-10  text-center" data-aos="fade-right">
               Tentang
             </h1>
-  
+            <h4
+            class="text-white text-base sm:text-lg font-semibold z-10 opacity-0 translate-x-full animate-[slideInRight_0.5s_ease-out_0.2s_forwards] text-center">
+            <nuxt-link to="/" class="text-white hover:text-blue-100">Home</nuxt-link> >
+            <nuxt-link to="/tentang" class="text-blue-400 ">Tentang</nuxt-link>
+          </h4>
           </div>
         </div>
       </div>

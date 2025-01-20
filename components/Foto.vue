@@ -79,32 +79,6 @@ onMounted(() => {
         </div>
       </div>
     </div>
-    <div v-else>
-      <div
-        class="h-[25vh] sm:h-[30vh] md:h-[35vh] w-full relative mt-20 mb-10 shadow-md flex items-center justify-center overflow-hidden">
-        <img src="assets/img/hero.jpg" alt="foto-persyaratan1" class="w-full h-full object-cover absolute inset-0" />
-        <div class="absolute inset-0 bg-black opacity-60" />
-        <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2 w-full px-4">
-          <!-- Animate main title from left -->
-          <h1
-            class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold z-10 opacity-0 -translate-x-full animate-[slideInLeft_0.5s_ease-out_forwards] text-center">
-            Galeri
-          </h1>
-          <!-- Animate subtitle from right with delay -->
-          <h1
-            class="text-white text-base sm:text-lg font-semibold z-10 opacity-0 translate-x-full animate-[slideInRight_0.5s_ease-out_0.2s_forwards] text-center">
-            Kelulusan dan Keberangkatan
-          </h1>
-          <h4
-            class="text-white text-base sm:text-lg font-semibold z-10 opacity-0 translate-x-full animate-[slideInLeft_0.5s_ease-out_forwards] text-center">
-            <nuxt-link to="/" class="text-white hover:text-blue-100">Home</nuxt-link> >
-            <nuxt-link to="/galeri" class="text-blue-400 ">Galeri</nuxt-link>
-          </h4>
-        </div>
-      </div>
-    </div>
-
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 items-start mx-3 sm:mx-5 mt-5 mb-10">
       <div v-for="(image, index) in images" :key="image.id"

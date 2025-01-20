@@ -1,8 +1,4 @@
 <template>
-    <div class="program my-16">
-        <h3 class="text-xl text-center my-10 font-bold text-blue-600" data-aos="fade-up">
-            Program Yang Diselenggarakan
-        </h3>
         <div class="card-container grid grid-cols-1 md:grid-cols-2 gap-8 px-8">
             <div class="flex flex-col bg-gray-50 border shadow-sm rounded-xl hover:drop-shadow-lg transition duration-500 hover:scale-110 group"
                 data-aos="fade-up">
@@ -38,5 +34,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </template>

@@ -1,8 +1,4 @@
 <template>
-    <div class="mb-20">
-        <h3 class="text-xl text-center mb-10 font-bold text-blue-600 my-10" data-aos="fade-up">
-            Proses Ke Jepang
-        </h3>
         <!-- Stepper -->
         <div data-hs-stepper='{
   "mode": "non-linear"
@@ -115,15 +111,15 @@
             <!-- End Stepper Nav -->
 
             <!-- Stepper Content -->
-            <!-- <div class="mt-5 sm:mt-8 px-20">
+            <div class="mt-5 sm:mt-8 px-20">
                
                 <div data-hs-stepper-content-item='{
       "index": 1
     }' style="display: none;">
                     <div
                         class="p-4 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-gray-200 rounded-xl">
-                        <h3 class="text-gray-500">
-                            First content
+                        <h3 class="text-gray-500 text-xl">
+                            Pra Medical &rarr; Bahasa &rarr; Jepang &rarr; Matematika &rarr; Psikotes &rarr; FMD
                         </h3>
                     </div>
                 </div>
@@ -133,8 +129,8 @@
     }' style="display: none;">
                     <div
                         class="p-4 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-gray-200 rounded-xl">
-                        <h3 class="text-gray-500">
-                            Second content
+                        <h3 class="text-gray-500 text-xl">
+                            Matematika &rarr; Kesemaptaan &rarr; Fisik &rarr; Psikotes (Swasta) &rarr; Bahasa Jepang &rarr; Wawanara &rarr; MCU
                         </h3>
                     </div>
                 </div>
@@ -144,8 +140,8 @@
     }' style="display: none;">
                     <div
                         class="p-4 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-gray-200 rounded-xl">
-                        <h3 class="text-gray-500">
-                            Third content
+                        <h3 class="text-gray-500 text-xl">
+                            Bahasa Jepang &rarr; Budaya Jepang &rarr; Pengurusan Dokumen
                         </h3>
                     </div>
                 </div>
@@ -155,15 +151,13 @@
     }'>
                     <div
                         class="p-4 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-gray-200 rounded-xl">
-                        <h3 class="text-gray-500">
-                            Final content
+                        <h3 class="text-gray-500 text-xl">
+                            Berangkat Ke Jepang
                         </h3>
                     </div>
                 </div>
             </div>
-        </div> -->
-            <!-- End Stepper Content -->
         </div>
-    </div>
+            <!-- End Stepper Content -->
     <!-- Stepper -->
 </template>

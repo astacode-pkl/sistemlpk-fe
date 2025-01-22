@@ -1,60 +1,13 @@
-<script>
-import image1 from '@/assets/img/1.png'
-import image2 from '@/assets/img/2.png'
-import image3 from '@/assets/img/3.png'
-export default {
-  name: 'GalleryGrid',
-  data() {
-    return {
-      isVisible: false,
-      selectedImage: null,
-      modalVisible: false,
-      loadedImages: new Set(),
-      images: [
-        {
-          id: 1,
-          src: image1,
-          title: 'Kelulusan Aril Rianto'
-        },
-        {
-          id: 2,
-          src: image2,
-          title: 'Kelulusan Abi Yusuf Latif Abdilah'
-        },
-        {
-          id: 3,
-          src: image3,
-          title: 'Kelulusan Ezy De Apri Faizal'
-        },
-        {
-          id: 4,
-          src: image3,
-          title: 'Kelulusan Ezy De Apri Faizal'
-        }
-      ]
+<script setup>
+useHead({
+  title: 'Galeri',
+  meta: [
+    {
+      name: 'description',
+      content: 'Galeri Page'
     }
-  },
-  mounted() {
-    this.isVisible = true;
-  },
-  methods: {
-    onImageLoad(index) {
-      this.loadedImages.add(index);
-    },
-    openModal(image) {
-      this.selectedImage = image;
-      setTimeout(() => {
-        this.modalVisible = true;
-      }, 50);
-    },
-    closeModal() {
-      this.modalVisible = false;
-      setTimeout(() => {
-        this.selectedImage = null;
-      }, 300);
-    }
-  }
-}
+  ]
+})
 
 import { ref, onMounted } from 'vue'
 
@@ -101,49 +54,13 @@ onMounted(() => {
       </div>
     </div>
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 items-start mx-3 sm:mx-5 mt-5 mb-10">
-      <div v-for="(image, index) in images" :key="image.id"
-        class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 h-full cursor-pointer"
-        :class="{ 'opacity-0 translate-y-4': !isVisible }"
-        :style="{ animation: `fadeInUp 0.6s ease forwards ${index * 0.2}s` }" @click="openModal(image)">
 
-        <div class="absolute inset-0 bg-gray-200 animate-pulse" />
-
-        <div class="w-full h-full">
-          <img :src="image.src" :alt="image.title" @load="onImageLoad(index)"
-            class="w-full h-auto transform group-hover:scale-105 transition-transform duration-300" />
-        </div>
-        <div
-          class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-          <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold text-center px-4">{{ image.title }}</h3>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div v-if="selectedImage"
-      class="fixed inset-0 z-[60] overflow-hidden bg-black bg-opacity-80 transition-all duration-300"
-      @click="closeModal">
-      <div class="flex items-center justify-center min-h-screen p-4">
-        <!-- Modal Close Button -->
-        <button type="button" class="absolute top-2 right-2 sm:top-3 sm:right-3 z-[70] text-white hover:text-gray-200"
-          @click="closeModal">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-
-        <!-- Modal Content -->
-        <div class="transform transition-all duration-300 max-w-4xl w-full md:w-1/2"
-          :class="{ 'opacity-0 scale-95': !modalVisible, 'opacity-100 scale-100': modalVisible }" @click.stop>
-          <img :src="selectedImage.src" :alt="selectedImage.title" class="w-full rounded-lg shadow-xl" />
-          <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mt-4 text-center px-2">
-            {{ selectedImage.title }}
-          </h3>
-        </div>
-      </div>
-    </div>
+    <h3 class="text-center text-xl text-blue-600 font-semibold mb-10 animate-fade-in" data-aos="fade-up">Foto Kelulusan
+    </h3>
+    <Foto />
+    <h3 class="text-center  text-xl text-blue-600 font-semibold  mb-10 animate-fade-in" data-aos="fade-up">Foto Kegiatan
+      Lainnya</h3>
+    <Galeri :preview-mode="false" />
 
   </div>
 </template>

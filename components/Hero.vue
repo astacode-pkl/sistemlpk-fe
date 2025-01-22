@@ -15,6 +15,21 @@
                             <div
                                 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
                                 <h1 class="text-3xl font-semibold">LPK TSUKUBA INDONESIA<br>職業訓練機関つくばインドネシア</h1>
+                                <div class="flex justify-center mt-10">
+                                    <nuxt-link to="https://tally.so/r/mOdErY" target="_blank">
+
+                                        <button type="button"
+                                            class="py-3 px-4 inline-flex items-center gap-x-2 text-md  rounded-2xl border border-transparent bg-blue-600 text-white hover:bg-transparent hover:scale-105 hover:text-white hover:border hover:border-white  disabled:opacity-50 disabled:pointer-events-none font-semibold hover:transition duration-700 mb-5">
+                                            Daftar Sekarang
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                            </svg>
+
+                                        </button>
+                                    </nuxt-link>
+                                </div>
                             </div>
                         </div>
                     </div>

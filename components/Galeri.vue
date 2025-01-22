@@ -126,7 +126,8 @@ export default {
 </script>
 
 <template>
-  <div class="galeri ">
+  <div class="galeri">
+    <!-- Grid gallery remains the same -->
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6 items-center mx-3 sm:mx-5 mt-5 mb-10">
       <div v-for="(image, index) in displayedImages" :key="image.id" data-aos="fade-up"
@@ -144,9 +145,7 @@ export default {
       </div>
     </div>
 
-
-
-    <!-- Modal -->
+    <!-- Modified Modal -->
     <div v-if="selectedImage"
       class="fixed inset-0 z-[60] overflow-hidden bg-black bg-opacity-80 transition-all duration-300"
       @click="closeModal">
@@ -158,12 +157,17 @@ export default {
           </svg>
         </button>
 
-        <div class="transform transition-all duration-300 max-w-4xl w-full md:w-1/2"
+        <div class="transform transition-all duration-300 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
           :class="{ 'opacity-0 scale-95': !modalVisible, 'opacity-100 scale-100': modalVisible }" @click.stop>
-          <img :src="selectedImage.src" :alt="selectedImage.title" class="w-full rounded-lg shadow-xl" />
-          <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mt-4 text-center px-2">
-            {{ selectedImage.title }}
-          </h3>
+          <div class="relative w-full h-full">
+            <div class="aspect-w-16 aspect-h-9 w-full">
+              <img :src="selectedImage.src" :alt="selectedImage.title"
+                class="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-xl mx-auto" />
+            </div>
+            <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mt-4 text-center px-2">
+              {{ selectedImage.title }}
+            </h3>
+          </div>
         </div>
       </div>
     </div>

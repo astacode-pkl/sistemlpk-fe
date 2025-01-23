@@ -63,7 +63,7 @@ onMounted(() => {
           Program Pemagangan SO (Swasta)</h2>
         <!-- card -->
 
-        <div data-aos="zoom-in" class="flex flex-wrap justify-start p-4 text-center gap-5 border rounded-lg shadow-lg">
+        <div class="flex flex-wrap justify-start p-4 text-center gap-5 border rounded-lg shadow-lg">
           <div class="w-full md:w-1/2">
             <img src="assets/img/japanimg.jpg" alt="Description" class="w-full h-full rounded-lg mb-4 md:mb-0">
           </div>
@@ -216,8 +216,7 @@ onMounted(() => {
     <div class="max-w-4xl mx-auto p-4">
       <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 relative">
         <!-- Circular Image -->
-        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 z-10 shadow-md"
-          data-aos="fade-down-right" data-aos-duration="2000">
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 z-10 shadow-md">
           <img src="assets/img/program2.jpg" alt="Program SSW/TG" class="w-full h-full object-cover" />
         </div>
 
@@ -229,8 +228,7 @@ onMounted(() => {
           </h2>
 
           <!-- Requirements List -->
-          <div class="flex flex-col items-center p-5 gap-2 text-center border rounded-lg bg-white md:-ml-40 shadow-lg"
-            data-aos="fade-up-left" data-aos-duration="2000">
+          <div class="flex flex-col items-center p-5 gap-2 text-center border rounded-lg bg-white md:-ml-40 shadow-lg">
             <div
               class="flex items-center gap-x-2 w-full md:w-3/4 lg:w-1/2 hover:scale-105 transition-transform duration-300 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

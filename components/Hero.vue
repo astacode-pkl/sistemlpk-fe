@@ -7,8 +7,7 @@
             "isAutoPlay": true
         }' class="relative">
             <div class="hs-carousel relative overflow-hidden h-screen bg-white">
-                <div
-                    class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+                <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
                     <div class="hs-carousel-slide">
                         <div class="flex justify-center h-full w-full bg-gray-100 relative">
                             <img src="/assets/img/hero.jpg" alt="hero" class="object-cover brightness-50 w-full">
@@ -27,7 +26,6 @@
                     </div>
                 </div>
             </div>
-
             <button type="button"
                 class="hs-carousel-prev hs-carousel-disabled:opacity-50 hs-carousel-disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-blue-600 ">
                 <span class="text-2xl hover:bg-gray-800/30 p-3 rounded-md" aria-hidden="true">
@@ -60,8 +58,8 @@
                     <button type="button"
                         class="py-3 px-4 inline-flex items-center gap-x-2 text-md rounded-2xl border border-transparent bg-blue-600 text-white hover:bg-transparent hover:scale-105 hover:text-white hover:border hover:border-white disabled:opacity-50 disabled:pointer-events-none font-semibold hover:transition duration-700 mb-5">
                         Daftar Sekarang
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>

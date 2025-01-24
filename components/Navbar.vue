@@ -44,7 +44,7 @@
                 <!-- End Logo w/ Collapse Button -->
                 <!-- Collapse -->
                 <div id="hs-header-classic"
-                    class="hs-collapse hidden overflow-hidden bg-white w-full lg:bg-transparent rounded-lg px-10 pt-3 mt-5 lg:mt-0 lg:pt-0 lg:px-0 transition-all duration-300 basis-full grow md:block"
+                    class="hs-collapse hidden overflow-hidden bg-white w-full md:bg-transparent rounded-lg px-10 pt-3 mt-5 lg:mt-0 lg:pt-0 lg:px-0 transition-all duration-300 basis-full grow md:block"
                     aria-labelledby="hs-header-classic-collapse">
                     <div
                         class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300">

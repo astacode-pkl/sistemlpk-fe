@@ -158,7 +158,7 @@ export default {
           </svg>
         </button>
 
-        <div class="transform transition-all duration-300 max-w-4xl w-full md:w-1/2"
+        <div class="transform transition-all duration-300 max-w-4xl w-80 md:w-96"
           :class="{ 'opacity-0 scale-95': !modalVisible, 'opacity-100 scale-100': modalVisible }" @click.stop>
           <img :src="selectedImage.src" :alt="selectedImage.title" class="w-full rounded-lg shadow-xl" />
           <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mt-4 text-center px-2">
